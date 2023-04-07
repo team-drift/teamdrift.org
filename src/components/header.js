@@ -33,7 +33,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <Link href='/contact' className="hidden lg:flex justify-end bg-blue font-semibold text-white px-5 py-2 rounded-full">
+                <Link href='/contact' className="hidden lg:block bg-blue font-semibold text-white px-5 py-2 rounded-full">
                     Contact Us
                 </Link>
 
