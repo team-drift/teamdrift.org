@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from './icons'
+import { menu_icon, x_icon } from './icons'
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <header className="bg-light-gray">
 
-            <nav className="flex items-center justify-between lg:px-16 p-6">
+            <nav className="flex items-center justify-between lg:px-16 p-5">
 
                 <Link href='/' className="flex items-center gap-3">
                     <div className="relative w-8 h-8">
@@ -21,7 +21,7 @@ export default function Header() {
                     </span>
                 </Link>
 
-                <div className="hidden lg:flex gap-16 font-semibold">
+                <div className="hidden lg:flex gap-16 font-semibold text-lg">
                     <Link href='/research'>
                         Research
                     </Link>
@@ -38,7 +38,7 @@ export default function Header() {
                 </Link>
 
                 <button onClick={() => setMobileMenuOpen(true)} className='lg:hidden flex justify-end'>
-                    <Bars3Icon />
+                    {menu_icon}
                 </button>
 
             </nav>
@@ -51,7 +51,7 @@ export default function Header() {
                             <Image src="tailwind_logo.svg" alt="DRIFT Logo" fill={true} />
                         </Link>
                         <button onClick={() => setMobileMenuOpen(false)}>
-                            <XMarkIcon />
+                            {x_icon}
                         </button>
                     </div>
 
