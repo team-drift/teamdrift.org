@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
-import Hero from '@/components/hero'
+import Hero from '@/components/home/hero'
+import Showcase from '@/components/home/showcase'
 
 export default function Home() {
+
     return (
         <>
 
@@ -16,13 +17,18 @@ export default function Home() {
             <main className='bg-light-gray'>
 
                 <Hero />
+                <Showcase />
 
-                <section>
-                    
-                </section>
-
-                <section>
-
+                <section className='bg-blue text-white px-8 py-16 flex flex-col items-center text-center gap-4 md:gap-6'>
+                    <h2 className='font-semibold text-xl md:text-4xl'>
+                        Interested in working with us?
+                    </h2>
+                    <p className='md:text-xl md:whitespace-pre-line'>
+                        We are always actively looking for companies to work with {'\n'} and motivated undergraduates to join our team!
+                    </p>
+                    <Link href='/contact' className="bg-white font-semibold text-black px-5 py-2 rounded-full">
+                        Learn more
+                    </Link>
                 </section>
                 
                 <section>
