@@ -1,6 +1,31 @@
 import Head from 'next/head'
 
 export default function Research() {
+
+    const data = [
+        {
+            image: '/photos/aided.jpg',
+            alt: 'An image of SQUAB-2, a prototype delivery drone used for testing.',
+            title: 'A better workflow',
+            subtitle: 'Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.',
+            content: 'Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.\n\nEt vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.'
+        },
+        {
+            image: '/photos/aided.jpg',
+            alt: 'An image of SQUAB-2, a prototype delivery drone used for testing.',
+            title: 'A better workflow',
+            subtitle: 'Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.',
+            content: 'Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.\n\nEt vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.'
+        },
+        {
+            image: '/photos/aided.jpg',
+            alt: 'An image of SQUAB-2, a prototype delivery drone used for testing.',
+            title: 'A better workflow',
+            subtitle: 'Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.',
+            content: 'Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.\n\nEt vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.'
+        },
+    ]
+
     return (
         <>
 
@@ -10,10 +35,42 @@ export default function Research() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <main>
-                <h1 className=''>
-                    Research
-                </h1>
+            <main className='bg-light-gray'>
+
+                <section className='text-center px-6 sm:px-20 pt-12 pb-20'>
+                    <h1 className='font-bold text-2xl md:text-4xl mb-2'>
+                        Problem solving with <span className='text-blue'>drones.</span>
+                    </h1>
+                    <h2 className='font-medium text-xl'>
+                        Take a deeper look at the specific projects and research our team has been working on.
+                    </h2>
+                </section>
+
+                {data.map(({ image, alt, title, subtitle, content }) => (
+                    <div class="relative isolate overflow-hidden px-6 pb-20 lg:overflow-visible lg:px-0">
+                        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                                <div class="lg:pr-4">
+                                    <div class="lg:max-w-lg">
+                                        <h3 class="mt-2 text-3xl font-bold sm:text-4xl">{title}</h3>
+                                        <p class="mt-6 text-xl leading-8">{subtitle}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="-ml-12 -mt-12 p-12 lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                                <img class="w-[48rem] max-w-none rounded-xl shadow-xl sm:w-[50rem]" src={image} alt={alt} />
+                            </div>
+                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                                <div class="lg:pr-4">
+                                    <div class="max-w-xl text-base leading-7 lg:max-w-lg whitespace-pre-line">
+                                        <p className='mb-8'>{content}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+
             </main>
 
         </>

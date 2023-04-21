@@ -3,8 +3,8 @@ import { github_icon, linkedin_icon } from "./icons"
 
 export default function Footer() {
     return (
-        <footer className="bg-neutral-700 text-white px-10 md:px-12 lg:px-36 py-16">
-            <div className="flex justify-between">
+        <footer className="bg-neutral-700 text-white px-5 md:px-12 lg:px-36 py-16 flex justify-center">
+            <div className="flex justify-between md:w-full">
                 <div>
 
                     <div className="mb-6">
