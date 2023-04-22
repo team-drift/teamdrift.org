@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Hero from '@/components/home/hero'
-import Showcase from '@/components/home/showcase'
+import Hero from '@/components/hero'
+import Showcase from '@/components/showcase'
 
 export default function Home() {
 
