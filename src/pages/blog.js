@@ -10,7 +10,7 @@ export default function Blog() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <main>
+            <main className='bg-light-gray'>
                 <h1 className=''>
                     Blog
                 </h1>
