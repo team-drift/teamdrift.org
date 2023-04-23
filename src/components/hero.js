@@ -36,7 +36,7 @@ export default function Hero() {
                                 <Hermes />
                             </Stage>
                         </Suspense>
-                        <OrbitControls autoRotate enableZoom={false} />
+                        <OrbitControls autoRotate enableZoom={false} enablePan={false} enableRotate={false} />
                     </Canvas>
                 </div>
 
