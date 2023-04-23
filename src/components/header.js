@@ -22,15 +22,18 @@ export default function Header() {
                 </Link>
 
                 <div className="hidden lg:flex gap-16 font-semibold text-lg">
+                    <Link href='/'>
+                        Home
+                    </Link>
                     <Link href='/research'>
                         Research
                     </Link>
                     <Link href='/people'>
                         People
                     </Link>
-                    <Link href='/blog'>
+                    {/* <Link href='/blog'>
                         Blog
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <Link href='/contact' className="hidden lg:block bg-blue font-semibold text-white px-5 py-2 rounded-full">
@@ -56,16 +59,19 @@ export default function Header() {
                     </div>
 
                     <div className="flex flex-col py-6 gap-2">
-                        <Link href="/research" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray">
+                        <Link href="/" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" on={() => setMobileMenuOpen(false)}>
+                            Home
+                        </Link>
+                        <Link href="/research" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" on={() => setMobileMenuOpen(false)}>
                             Research
                         </Link>
-                        <Link href="/people" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray">
+                        <Link href="/people" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             People
                         </Link>
-                        <Link href="/blog" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray">
+                        <Link href="/blog" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             Blog
                         </Link>
-                        <Link href="/contact" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray">
+                        <Link href="/contact" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             Contact Us
                         </Link>
                     </div>

@@ -1,47 +1,68 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function People() {
 
     const team = [
         {
-            image: 'team/nicholas_ly.jpg',
+            image: '/team/gavin_gardner.png',
+            name: 'Gavin Gardner',
+            position: 'Project Manager',
+        },
+        {
+            image: '/team/ross_davis.png',
+            name: 'Ross Davis',
+            position: 'Mechanical Lead',
+        },
+        {
+            image: '/team/malachi_keener.png',
+            name: 'Malachi Keener',
+            position: 'Latching and Charging Lead',
+        },
+        {
+            image: '/team/brady_berg.png',
+            name: 'Brady Berg',
+            position: 'Software Lead',
+        },
+        {
+            image: '/team/tate_virkus.png',
+            name: 'Tate Virkus',
+            position: 'Prototype Engineer',
+        },
+        {
+            image: '/team/nick_michaels.png',
+            name: 'Nick Michaels',
+            position: 'Mechanical Engineer',
+        },
+        {
+            image: '/team/gryson_gardner.png',
+            name: 'Gryson Gardner',
+            position: 'Drone Systems Engineer',
+        },
+        {
+            image: '/team/ahmed_shoble.png',
+            name: 'Ahmed Shoble',
+            position: 'Circuit Engineer',
+        },
+        {
+            image: '/team/adam_anderson.png',
+            name: 'Adam Anderson',
+            position: 'Software Engineer',
+        },
+        {
+            image: '/team/nicholas_ly.png',
             name: 'Nicholas Ly',
             position: 'Software Engineer',
         },
         {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
+            image: '/team/david_lingan.png',
+            name: 'David Cody Lingan',
             position: 'Software Engineer',
         },
         {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
-        },
-        {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
-        },
-        {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
-        },
-        {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
-        },
-        {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
-        },
-        {
-            image: 'team/nicholas_ly.jpg',
-            name: 'Nicholas Ly',
-            position: 'Software Engineer',
+            image: '/team/ryan_atkinson.png',
+            name: 'Ryan Atkinson',
+            position: 'Drone Systems Engineer',
         },
     ]
 
@@ -65,23 +86,23 @@ export default function People() {
                             Our passion undegraduate team is solving complex problems by developing extraordinary flight technology.
                         </p>
                         <p className='mt-8 max-w-4xl leading-7'>
-                            Founded by students, for students, our team will continue to be an opportunity for undergraduates to jump start their career through advanced, real world engineering problems.
+                            Founded by students, for students, our team will continue to be an opportunity for undergraduates to jump start their career through advanced, real world engineering problems. Our research is completely funded by awards, grants, sponsorships, and investments by others who want to support our mission to revolutionize drones.
                         </p>
                         <p className='mt-4 max-w-4xl leading-7'>
-                            We are completely funded by grants, investments, and sponsors who support our mission to revolutionize drones.
+                            Our team is made up of students from many different fields, including mechanical engineering, electrical engineering, computer science, and data science. We are passionate about what we do, and we are excited to be able share our work!
                         </p>
                         <h1 className='font-bold text-3xl sm:text-4xl mt-16'>
                             Never done innovating.
                         </h1>
-                        <p className='mt-4 max-w-4xl leading-7'>
+                        <p className='mt-4 text-xl max-w-4xl leading-8'>
                             We're extremely proud of our team, and we're honored others have taken notice. Our team has interned or accepted offers from these great companies.
                         </p>
                         <div class="mx-auto mt-16 grid grid-cols-4 items-center gap-y-12 sm:grid-cols-6">
-                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/amazon.png" alt="Amazon" />
-                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/ford.png" alt="Ford" />
-                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/bosch.png" alt="Bosch" />
-                            <img class="col-span-2 max-h-5 sm:max-h-6 md:max-h-7 w-full object-contain sm:col-start-2" src="company_logos/blueflite.png" alt="Blueflite" />
-                            <img class="col-span-2 col-start-2 max-h-7 sm:max-h-8 md:max-h-10 w-full object-contain sm:col-start-auto" src="company_logos/northrop_grumman.png" alt="Northrop Grumman" />
+                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/amazon.png" alt="Amazon" loading='lazy' />
+                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/ford.png" alt="Ford" loading='lazy' />
+                            <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/bosch.png" alt="Bosch" loading='lazy' />
+                            <img class="col-span-2 max-h-5 sm:max-h-6 md:max-h-7 w-full object-contain sm:col-start-2" src="company_logos/blueflite.png" alt="Blueflite" loading='lazy' />
+                            <img class="col-span-2 col-start-2 max-h-7 sm:max-h-8 md:max-h-10 w-full object-contain sm:col-start-auto" src="company_logos/northrop_grumman.png" alt="Northrop Grumman" loading='lazy' />
                         </div>
                     </div>
                 </section>
@@ -94,7 +115,9 @@ export default function People() {
                         <div className='grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                             {team.map(({ image, name, position }) => (
                                 <div className='flex flex-col items-center'>
-                                    <img class="rounded-full max-h-64 object-cover mb-4 shadow-xl" src={image} alt={name} />
+                                    <div className='relative w-64 aspect-w-1 aspect-h-1 mb-4'>
+                                        <Image src={image} alt={name} fill={true} className='rounded-full object-cover object-center shadow-xl' />
+                                    </div>
                                     <text className='text-lg font-semibold leading-7 tracking-tight'>{name}</text>
                                     <text className='text-base font-semibold leading-6 text-blue'>{position}</text>
                                 </div>

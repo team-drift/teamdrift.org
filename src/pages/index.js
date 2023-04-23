@@ -1,9 +1,30 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Hero from '@/components/hero'
-import Showcase from '@/components/showcase'
 
 export default function Home() {
+
+    const data = [
+        {
+            image: '/photos/solutions.png',
+            alt: 'An image of SQUAB-2, a prototype delivery drone used for testing.',
+            header: 'Creative solutions.',
+            details: 'Our team is solving modern problems with novel and unique drone technology. Dynamic and innovative, we are developing one-of-a-kind solutions to a variety of problems to make the world a better place.'
+        },
+        {
+            image: '/photos/production.png',
+            alt: 'An image of a laptop opened to display a design of a drone landing platform.',
+            header: 'Intelligent production.',
+            details: 'We strive for excellence, and are passionate about bringing the best out of every project. Every one of our projects go through immense research, and we use modern technology to bring our ideas to life.'
+        },
+        {
+            image: '/photos/students.png',
+            alt: 'An image of two students working together.',
+            header: 'Empowering students.',
+            details: 'Our undergraduate team comes from a variety of fields, including mechanical engineering, electrical engineering, and computer science. We strive for excellence, and have grown to become a great opprotunity for students to jump start their careers.'
+        },
+    ]
 
     return (
         <>
@@ -17,7 +38,29 @@ export default function Home() {
             <main className='bg-light-gray'>
 
                 <Hero />
-                <Showcase />
+                
+                <section className='bg-white px-[10%] py-20'>
+                    <h2 className='font-semibold text-4xl mb-14'>
+                        Innovative ideas by <span className='text-blue'>innovative students.</span>
+                    </h2>
+                    <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 xl:gap-x-8">
+                        {data.map(({ image, alt, header, details }) => (
+                            <div>
+                                <div class="relative aspect-h-1 aspect-w-1 w-full mb-6">
+                                    <Image src={image} alt={alt} fill={true} class="rounded-xl object-cover object-center lg:h-full lg:w-full shadow-xl" />
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-2xl mb-4">
+                                        {header}
+                                    </h3>
+                                    <p class="whitespace-pre-line">
+                                        {details}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
 
                 <section className='bg-blue text-white px-8 py-16 flex flex-col items-center text-center gap-4 md:gap-6'>
                     <h2 className='font-semibold text-xl md:text-4xl'>
