@@ -17,10 +17,10 @@ export default function Footer() {
                     </div>
 
                     <div className="flex gap-5 mb-6">
-                        <a href=''>
+                        <a href='https://www.linkedin.com/company/driftmsu/about/'>
                             {linkedin_icon}
                         </a>
-                        <a href=''>
+                        <a href='https://github.com/team-drift'>
                             {github_icon}
                         </a>
                     </div>
@@ -35,9 +35,9 @@ export default function Footer() {
                         <Link href='/people' className="hover:underline">
                             People
                         </Link>
-                        <Link href='/blog' className="hover:underline">
+                        {/* <Link href='/blog' className="hover:underline">
                             Blog
-                        </Link>
+                        </Link> */}
                         <Link href='/contact' className="hover:underline">
                             Contact Us
                         </Link>
@@ -57,9 +57,9 @@ export default function Footer() {
                     <Link href='/people' className="hover:underline">
                         People
                     </Link>
-                    <Link href='/blog' className="hover:underline">
+                    {/* <Link href='/blog' className="hover:underline">
                         Blog
-                    </Link>
+                    </Link> */}
                     <Link href='/contact' className="hover:underline">
                         Contact Us
                     </Link>
