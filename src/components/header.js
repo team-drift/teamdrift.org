@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { menu_icon, x_icon } from './icons'
+import logo from '@/assets/drift_logo.png'
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -12,9 +13,9 @@ export default function Header() {
 
             <nav className="flex items-center justify-between lg:px-16 p-5">
 
-                <Link href='/' className="flex items-center gap-3">
+                <Link href='/' className="flex gap-3">
                     <div className="relative w-8 h-8">
-                        <Image src="tailwind_logo.svg" alt="DRIFT Logo" fill={true} />
+                        <Image src={logo} alt="DRIFT Logo" />
                     </div>
                     <span className='font-bold text-xl'>
                         DRIFT
@@ -51,7 +52,7 @@ export default function Header() {
                     
                     <div className="flex items-center justify-between">
                         <Link href="/" className="relative w-10 h-10">
-                            <Image src="tailwind_logo.svg" alt="DRIFT Logo" fill={true} />
+                            <Image src={logo} alt="DRIFT Logo" />
                         </Link>
                         <button onClick={() => setMobileMenuOpen(false)}>
                             {x_icon}
@@ -68,9 +69,9 @@ export default function Header() {
                         <Link href="/people" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             People
                         </Link>
-                        <Link href="/blog" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
+                        {/* <Link href="/blog" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             Blog
-                        </Link>
+                        </Link> */}
                         <Link href="/contact" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             Contact Us
                         </Link>

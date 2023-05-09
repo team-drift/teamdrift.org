@@ -29,14 +29,15 @@ export default function Hero() {
                     </Link>
                 </div>
 
-                <div className='w-full aspect-1 xs:w-[400px] xs:h-[400px]'>
+                <div className='relative w-full aspect-1 xs:w-[400px] xs:h-[400px]'>
+                    <div className="absolute w-full h-full z-10" />
                     <Canvas shadows dpr={[1, 2]} camera={{ fov: 60 }}>
                         <Suspense>
                             <Stage preset="soft" shadows={false} intensity={0.3} environment="">
                                 <Hermes />
                             </Stage>
                         </Suspense>
-                        <OrbitControls autoRotate enableZoom={false} enablePan={false} enableRotate={false} />
+                        <OrbitControls autoRotate />
                     </Canvas>
                 </div>
 
