@@ -3,7 +3,18 @@ import Image from 'next/image'
 
 export default function Research() {
 
-    const data = [
+
+    const leads_data = [
+        {
+            image: '/photos/leads.png',
+            alt: 'Temporary image of the LEADS project.',
+            title: 'Laser Energized Aerial Drone System',
+            subtitle: 'Subtitle for LEADS',
+            content: 'Laser Energized Aerial Drone System (LEADS) is a Michigan State University student-led project with a solution to the limitations of current drone technology for monitoring wildfires. \n\n Due to the increasing threat of wildfires caused by rising global temperatures, firefighters rely heavily on unmanned aerial vehicles (UAV) to gain mission-critical information from a safe distance. Although these systems provide first responders with a quick view from above, their flight time and range are limited. \n\n On the contrary, NASA operates two RQ-4 Global Hawk’s out of Armstrong Flight Research Center for natural disaster surveillance but requires a comparatively high operational cost and downtime. \n\n To solve these issues, LEADS combines an optimized Vertical Takeoff and Landing (VTOL) platform paired with wireless charging capabilities to sustain a virtually unlimited flight time throughout the mission. By developing a safe, quiet, and affordable system, LEADS provides first responders with critical air support without hassle and maintenance.'
+        }
+    ]
+
+    const aided_data = [
         {
             image: '/photos/aided.png',
             alt: 'An image of SQUAB-2, a prototype delivery drone used for testing.',
@@ -24,7 +35,36 @@ export default function Research() {
 
             <main className='bg-light-gray pt-16'>
 
-                {data.map(({ image, alt, title, subtitle, content }) => (
+
+                {leads_data.map(({ image, alt, title, subtitle, content }) => (
+                    <div class="relative isolate overflow-hidden px-6 pb-20 lg:overflow-visible lg:px-0">
+                        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                                <div class="lg:pr-4">
+                                    <div class="lg:max-w-lg">
+                                        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">{title}</h1>
+                                        <p class="mt-6 text-xl leading-8">{subtitle}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:py-12 sm:px-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                                <div className='relative aspect-w-5 aspect-h-4'>
+                                    <Image src={image} alt={alt} fill={true} className='rounded-xl object-scale-down object-center shadow-xl' />
+                                </div>
+                            </div>
+                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                                <div class="lg:pr-4">
+                                    <div class="max-w-xl text-base leading-7 lg:max-w-lg whitespace-pre-line">
+                                        <p className='mb-8'>{content}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+
+
+                {aided_data.map(({ image, alt, title, subtitle, content }) => (
                     <div class="relative isolate overflow-hidden px-6 pb-20 lg:overflow-visible lg:px-0">
                         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
                             <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
