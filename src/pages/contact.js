@@ -26,7 +26,7 @@ export default function Contact() {
                             Are you an undergraduate student interested in joining our team? Send us an email at email@email.com describing your past research experiences, interests, and goals. Also include a resume or CV if possible.
                         </p>
                         <p className='mt-4 max-w-4xl leading-7'>
-                            As a completely student run organization, we depend on investments and awards to fund our research. If you are a company representative and/or would be interested in becoming a sponsor, or just want to get to know us better, we are always open to chat. Reach out to email@email.com and we'll respond as soon as we can.
+                            As a completely student run organization, we depend on investments and awards to fund our research. If you are a company representative and/or would be interested in becoming a sponsor, or just want to get to know us better, we are always open to chat. Reach out to teamdriftmsu@gmail.com and we'll respond as soon as we can.
                         </p>
                     </div>
                 </section>
