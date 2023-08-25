@@ -9,7 +9,7 @@ export default function Research() {
             image: '/photos/leads.png',
             alt: 'Temporary image of the LEADS project.',
             title: 'Laser Energized Aerial Drone System',
-            subtitle: 'Subtitle for LEADS',
+            subtitle: '',
             content: 'Laser Energized Aerial Drone System (LEADS) is a Michigan State University student-led project with a solution to the limitations of current drone technology for monitoring wildfires. \n\n Due to the increasing threat of wildfires caused by rising global temperatures, firefighters rely heavily on unmanned aerial vehicles (UAV) to gain mission-critical information from a safe distance. Although these systems provide first responders with a quick view from above, their flight time and range are limited. \n\n On the contrary, NASA operates two RQ-4 Global Hawk’s out of Armstrong Flight Research Center for natural disaster surveillance but requires a comparatively high operational cost and downtime. \n\n To solve these issues, LEADS combines an optimized Vertical Takeoff and Landing (VTOL) platform paired with wireless charging capabilities to sustain a virtually unlimited flight time throughout the mission. By developing a safe, quiet, and affordable system, LEADS provides first responders with critical air support without hassle and maintenance.'
         }
     ]
