@@ -83,7 +83,7 @@ export default function People() {
                             Research for the future, by the future.
                         </h1>
                         <p className='mt-4 text-xl max-w-4xl leading-8'>
-                            Our passion undegraduate team is solving complex problems by developing extraordinary flight technology.
+                            Our passion undergraduate team is solving complex problems by developing extraordinary flight technology.
                         </p>
                         <p className='mt-8 max-w-4xl leading-7'>
                             Founded by students, for students, our team will continue to be an opportunity for undergraduates to jump start their career through advanced, real world engineering problems. Our research is completely funded by awards, grants, sponsorships, and investments by others who want to support our mission to revolutionize drones.
