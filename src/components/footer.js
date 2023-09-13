@@ -35,6 +35,9 @@ export default function Footer() {
                         <Link href='/people' className="hover:underline">
                             People
                         </Link>
+                        <Link href='/sponsors' className="hover:underline">
+                            Sponsor Us!
+                        </Link>
                         {/* <Link href='/blog' className="hover:underline">
                             Blog
                         </Link> */}
@@ -57,6 +60,9 @@ export default function Footer() {
                     <Link href='/people' className="hover:underline">
                         People
                     </Link>
+                    <Link href='/sponsors' className="hover:underline">
+                        Sponsor Us!
+                    </Link>
                     {/* <Link href='/blog' className="hover:underline">
                         Blog
                     </Link> */}
@@ -64,7 +70,7 @@ export default function Footer() {
                         Contact Us
                     </Link>
                 </div>
-                
+
             </div>
         </footer>
     )

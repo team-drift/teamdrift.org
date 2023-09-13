@@ -32,6 +32,9 @@ export default function Header() {
                     <Link href='/people'>
                         People
                     </Link>
+                    <Link href='/sponsors'>
+                        Sponsor Us!
+                    </Link>
                     {/* <Link href='/blog'>
                         Blog
                     </Link> */}
@@ -49,7 +52,7 @@ export default function Header() {
 
             <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full bg-white px-6 py-6 sm:max-w-xs sm:ring-1 sm:ring-gray-900/10">
-                    
+
                     <div className="flex items-center justify-between">
                         <Link href="/" className="relative w-10 h-10">
                             <Image src={logo} alt="DRIFT Logo" />
@@ -69,6 +72,9 @@ export default function Header() {
                         <Link href="/people" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             People
                         </Link>
+                        <Link href="/sponsors" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
+                            Sponsor Us!
+                        </Link>
                         {/* <Link href="/blog" className="rounded-lg px-3 py-2 -mx-3 text-xl font-semibold hover:bg-light-gray" onClick={() => setMobileMenuOpen(false)}>
                             Blog
                         </Link> */}
@@ -76,7 +82,7 @@ export default function Header() {
                             Contact Us
                         </Link>
                     </div>
-                    
+
                 </Dialog.Panel>
             </Dialog>
 
