@@ -21,36 +21,9 @@ export default function Sponsors() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            <main className='bg-light-gray pt-16'>
-
-                {data.map(({ image, alt, title, subtitle, content }) => (
-                    <div class="relative isolate overflow-hidden px-6 pb-20 lg:overflow-visible lg:px-0">
-                        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
-                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                                <div class="lg:pr-4">
-                                    <div class="lg:max-w-lg">
-                                        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">{title}</h1>
-                                        <p class="mt-6 text-xl leading-8">{subtitle}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:py-12 sm:px-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                                <div className='relative aspect-w-5 aspect-h-4'>
-                                    <Image src={image} alt={alt} fill={true} className='rounded-xl object-scale-down object-center shadow-xl' />
-                                </div>
-                            </div>
-                            <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                                <div class="lg:pr-4">
-                                    <div class="max-w-xl text-base leading-7 lg:max-w-lg whitespace-pre-line">
-                                        <p className='mb-8'>{content}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-
-            </main>
+            <div className='my-8'>
+    <iframe title='Fueling Breakthroughs in Drone Technology' src='https://www.gofundme.com/f/fueling-breakthroughs-in-drone-technology/widget/large' width='100%' height='600' frameBorder='0'></iframe>
+</div>
 
         </>
     )
