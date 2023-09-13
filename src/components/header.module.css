@@ -1,0 +1,8 @@
+@keyframes zoom {
+    0%, 100% { transform: scale(1); } 
+    50% { transform: scale(1.1); } /* Adjust scale factor as needed */
+}
+
+.zoomAnimation {
+    animation: zoom 3s infinite; /* Adjust duration as needed */
+}
