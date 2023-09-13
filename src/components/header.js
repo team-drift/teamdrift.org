@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { menu_icon, x_icon } from './icons'
 import logo from '@/assets/drift_logo.png'
+import styles from './header.module.css';
+
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -32,8 +34,8 @@ export default function Header() {
                     <Link href='/people'>
                         People
                     </Link>
-                    <Link href='/sponsors'>
-                        Sponsor Us!
+                    <Link href='/sponsors' className={`${styles.zoomAnimation} text-blue`}>
+                    Sponsor Us!
                     </Link>
                     {/* <Link href='/blog'>
                         Blog
