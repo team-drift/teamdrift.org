@@ -79,6 +79,20 @@ export default function Research() {
                                 <div className='relative aspect-w-5 aspect-h-4'>
                                     <Image src={image} alt={alt} fill={true} className='rounded-xl object-scale-down object-center shadow-xl' />
                                 </div>
+                                <div className='flex justify-center w-full mt-4'>
+                                <iframe 
+                                    width="560" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/n6jO51OFsi8?si=XZl2xdLjSjJaI7rX" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+
+
+                                
                             </div>
                             <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                                 <div class="lg:pr-4">

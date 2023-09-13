@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import Image from "next/image"
 
@@ -43,13 +42,25 @@ export default function Hero() {
 
             </div>
 
-            <div className='flex gap-4 items-center'>
+            <div className='flex gap-4 items-center mt-5'> 
                 <span className='font-light text-2xl tracking-wider'>
                     FUNDED BY
                 </span>
                 <div className='relative w-28 h-28'>
                     <Image src='/company_logos/nasa.png' alt='NASA' fill={true} className='object-contain' />
                 </div>
+            </div>
+
+            <div className='flex justify-center w-full mt-20'>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/n6jO51OFsi8?si=XZl2xdLjSjJaI7rX" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
             
         </section>
