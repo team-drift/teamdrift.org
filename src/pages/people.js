@@ -10,11 +10,6 @@ export default function People() {
             position: 'Project Manager',
         },
         {
-            image: '/team/ross_davis.png',
-            name: 'Ross Davis',
-            position: 'Mechanical Lead',
-        },
-        {
             image: '/team/malachi_keener.png',
             name: 'Malachi Keener',
             position: 'Latching and Charging Lead',
@@ -40,6 +35,35 @@ export default function People() {
             position: 'Drone Systems Engineer',
         },
         {
+            image: '/team/david_lingan.png',
+            name: 'David Cody Lingan',
+            position: 'Software Engineer',
+        },
+        {
+            image: '/team/ryan_atkinson.png',
+            name: 'Ryan Atkinson',
+            position: 'Drone Systems Engineer',
+        },
+        {
+            image: '/team/kaden_swierkos.jpg',
+            name: 'Kaden Swierkos',
+            position: 'Drone Systems Engineer',
+        },
+        {
+            image: '/team/owen_cochell.JPG',
+            name: 'Owen Cochell',
+            position: 'Software Engineer',
+        }
+    ]
+
+
+    const pastTeam = [
+        {
+            image: '/team/ross_davis.png',
+            name: 'Ross Davis',
+            position: 'Mechanical Lead',
+        },
+        {
             image: '/team/ahmed_shoble.png',
             name: 'Ahmed Shoble',
             position: 'Circuit Engineer',
@@ -54,16 +78,7 @@ export default function People() {
             name: 'Nicholas Ly',
             position: 'Software Engineer',
         },
-        {
-            image: '/team/david_lingan.png',
-            name: 'David Cody Lingan',
-            position: 'Software Engineer',
-        },
-        {
-            image: '/team/ryan_atkinson.png',
-            name: 'Ryan Atkinson',
-            position: 'Drone Systems Engineer',
-        },
+        
     ]
 
     return (
@@ -101,16 +116,25 @@ export default function People() {
                             <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/amazon.png" alt="Amazon" loading='lazy' />
                             <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/ford.png" alt="Ford" loading='lazy' />
                             <img class="col-span-2 max-h-8 sm:max-h-10 md:max-h-12 w-full object-contain" src="company_logos/bosch.png" alt="Bosch" loading='lazy' />
+
                             <img class="col-span-2 max-h-5 sm:max-h-6 md:max-h-7 w-full object-contain sm:col-start-2" src="company_logos/blueflite.png" alt="Blueflite" loading='lazy' />
                             <img class="col-span-2 col-start-2 max-h-7 sm:max-h-8 md:max-h-10 w-full object-contain sm:col-start-auto" src="company_logos/northrop_grumman.png" alt="Northrop Grumman" loading='lazy' />
+
+                            <img class="col-span-2 max-h-10 sm:max-h-12 md:max-h-12 w-full object-contain" src="company_logos/linkedin.png" alt="LinkedIn" loading='lazy' />
+                            <img class="col-span-2 max-h-12 sm:max-h-14 md:max-h-16 w-full object-contain" src="company_logos/tesla.png" alt="Tesla" loading='lazy' />
+                            <img class="col-span-2 max-h-10 sm:max-h-12 md:max-h-12 w-full object-contain" src="company_logos/williams_international.png" alt="Williams International" loading='lazy' />
+
+
                         </div>
                     </div>
                 </section>
 
+
+
                 <section className='flex justify-center py-16 bg-white'>
                     <div className='px-6'>
                         <h1 className='font-bold text-3xl sm:text-4xl mb-12'>
-                            Meet our team.
+                            Meet our team
                         </h1>
                         <div className='grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                             {team.map(({ image, name, position }) => (
@@ -120,6 +144,28 @@ export default function People() {
                                     </div>
                                     <text className='text-lg font-semibold leading-7 tracking-tight'>{name}</text>
                                     <text className='text-base font-semibold leading-6 text-blue'>{position}</text>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+
+                <section className='flex justify-center py-16 bg-white'>
+                    <div className='px-6'>
+                        <h1 className='font-bold text-3xl sm:text-4xl mb-12'>
+                            and our graduated teammates!
+                        </h1>
+                        <p className='mt-4 max-w-4xl leading-8'>
+                        </p>
+                        <div className='grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+                            {pastTeam.map(({ image, name, position }) => (
+                                <div className='flex flex-col items-center'>
+                                    <div className='relative w-64 aspect-w-1 aspect-h-1 mb-4'>
+                                        <Image src={image} alt={name} fill={true} className='rounded-full object-cover object-center shadow-xl' />
+                                    </div>
+                                    <text className='text-lg font-semibold leading-7 tracking-tight'>{name}</text>
+                                    <text className='text-base font-semibold leading-6 text-gray-500'>{position}</text>
                                 </div>
                             ))}
                         </div>
