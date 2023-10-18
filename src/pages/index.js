@@ -38,6 +38,20 @@ export default function Home() {
             <main className='bg-light-gray'>
 
                 <Hero />
+
+                <section className='bg-white px-[10%] py-20'>
+                    <div className='flex justify-center w-full mt-20'>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/n6jO51OFsi8?si=XZl2xdLjSjJaI7rX" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                </section>
                 
                 <section className='bg-white px-[10%] py-20'>
                     <h2 className='font-semibold text-4xl mb-14'>
