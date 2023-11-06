@@ -34,12 +34,12 @@ export default function Header() {
                     <Link href='/people'>
                         People
                     </Link>
+                    <Link href='/blog'>
+                        Blog
+                    </Link>
                     <Link href='/sponsors' className={`${styles.zoomAnimation} text-blue`}>
                     Sponsor Us!
                     </Link>
-                    {/* <Link href='/blog'>
-                        Blog
-                    </Link> */}
                 </div>
 
                 <Link href='/contact' className="hidden lg:block bg-blue font-semibold text-white px-5 py-2 rounded-full">
