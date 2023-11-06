@@ -51,17 +51,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className='flex justify-center w-full mt-20'>
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/n6jO51OFsi8?si=XZl2xdLjSjJaI7rX" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+
             
         </section>
     )
