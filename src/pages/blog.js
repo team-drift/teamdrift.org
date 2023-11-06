@@ -12,13 +12,11 @@ export default function Blog() {
             <main className='bg-light-gray'>
                 <h1 className=''>
                 </h1>
-                <div 
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            <div class='sk-ww-linkedin-page-post' data-embed-id='211783'></div>
-                            <script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script>
-                        `
-                    }}
+                <iframe 
+                    src='https://widgets.sociablekit.com/linkedin-page-posts/iframe/211783' 
+                    frameborder='0' 
+                    width='100%' 
+                    height='1000'
                 />
             </main>
         </>
