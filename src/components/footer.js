@@ -35,12 +35,12 @@ export default function Footer() {
                         <Link href='/people' className="hover:underline">
                             People
                         </Link>
+                        <Link href='/blog' className="hover:underline">
+                            Blog
+                        </Link>
                         <Link href='/sponsors' className="hover:underline">
                             Sponsor Us!
                         </Link>
-                        {/* <Link href='/blog' className="hover:underline">
-                            Blog
-                        </Link> */}
                         <Link href='/contact' className="hover:underline">
                             Contact Us
                         </Link>
@@ -60,12 +60,12 @@ export default function Footer() {
                     <Link href='/people' className="hover:underline">
                         People
                     </Link>
+                    <Link href='/blog' className="hover:underline">
+                        Blog
+                    </Link>
                     <Link href='/sponsors' className="hover:underline">
                         Sponsor Us!
                     </Link>
-                    {/* <Link href='/blog' className="hover:underline">
-                        Blog
-                    </Link> */}
                     <Link href='/contact' className="hover:underline">
                         Contact Us
                     </Link>
