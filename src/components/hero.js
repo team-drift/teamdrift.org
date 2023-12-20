@@ -55,12 +55,13 @@ export default function Hero() {
                 <iframe 
                     width="560" 
                     height="315" 
-                    src="https://www.youtube.com/embed/n6jO51OFsi8?si=XZl2xdLjSjJaI7rX" 
+                    src="https://www.youtube.com/embed/n6jO51OFsi8?si=LyxSE8xq-z4XNLZA" 
                     title="YouTube video player" 
-                    frameborder="0" 
+                    frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
+                    allowFullScreen>    
                 </iframe>
+
             </div>
             
         </section>
