@@ -7,37 +7,17 @@ export default function People() {
         {
             image: '/team/gavin_gardner.png',
             name: 'Gavin Gardner',
-            position: 'Project Manager',
-        },
-        {
-            image: '/team/malachi_keener.png',
-            name: 'Malachi Keener',
-            position: 'Latching and Charging Lead',
-        },
-        {
-            image: '/team/brady_berg.png',
-            name: 'Brady Berg',
-            position: 'Software Lead',
-        },
-        {
-            image: '/team/tate_virkus.png',
-            name: 'Tate Virkus',
-            position: 'Prototype Engineer',
-        },
-        {
-            image: '/team/nick_michaels.png',
-            name: 'Nick Michaels',
-            position: 'Mechanical Engineer',
+            position: 'Chief Engineer',
         },
         {
             image: '/team/gryson_gardner.png',
             name: 'Gryson Gardner',
-            position: 'Drone Systems Engineer',
-        },
+            position: 'Project Manager',
+        },        
         {
             image: '/team/david_lingan.png',
             name: 'David Cody Lingan',
-            position: 'Software Engineer',
+            position: 'Software Lead',
         },
         {
             image: '/team/ryan_atkinson.png',
@@ -53,11 +33,36 @@ export default function People() {
             image: '/team/owen_cochell.JPG',
             name: 'Owen Cochell',
             position: 'Software Engineer',
+        },
+        {
+            image: '/team/swabhan_katkoori.png',
+            name: 'Swabhan Katkoori',
+            position: 'Software Engineer',
         }
     ]
 
 
     const pastTeam = [
+        {
+            image: '/team/brady_berg.png',
+            name: 'Brady Berg',
+            position: 'Software Lead',
+        },
+        {
+            image: '/team/malachi_keener.png',
+            name: 'Malachi Keener',
+            position: 'Latching and Charging Lead',
+        },
+        {
+            image: '/team/tate_virkus.png',
+            name: 'Tate Virkus',
+            position: 'Prototype Engineer',
+        },
+        {
+            image: '/team/nick_michaels.png',
+            name: 'Nick Michaels',
+            position: 'Mechanical Engineer',
+        },        
         {
             image: '/team/ross_davis.png',
             name: 'Ross Davis',
