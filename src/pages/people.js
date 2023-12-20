@@ -7,28 +7,13 @@ export default function People() {
         {
             image: '/team/gavin_gardner.png',
             name: 'Gavin Gardner',
-            position: 'Project Manager',
+            position: 'Chief Engineer',
         },
         {
             image: '/team/gryson_gardner.png',
             name: 'Gryson Gardner',
             position: 'Project Manager',
         },        
-        {
-            image: '/team/malachi_keener.png',
-            name: 'Malachi Keener',
-            position: 'Latching and Charging Lead',
-        },
-        {
-            image: '/team/tate_virkus.png',
-            name: 'Tate Virkus',
-            position: 'Prototype Engineer',
-        },
-        {
-            image: '/team/nick_michaels.png',
-            name: 'Nick Michaels',
-            position: 'Mechanical Engineer',
-        },
         {
             image: '/team/david_lingan.png',
             name: 'David Cody Lingan',
@@ -63,6 +48,21 @@ export default function People() {
             name: 'Brady Berg',
             position: 'Software Lead',
         },
+        {
+            image: '/team/malachi_keener.png',
+            name: 'Malachi Keener',
+            position: 'Latching and Charging Lead',
+        },
+        {
+            image: '/team/tate_virkus.png',
+            name: 'Tate Virkus',
+            position: 'Prototype Engineer',
+        },
+        {
+            image: '/team/nick_michaels.png',
+            name: 'Nick Michaels',
+            position: 'Mechanical Engineer',
+        },        
         {
             image: '/team/ross_davis.png',
             name: 'Ross Davis',
